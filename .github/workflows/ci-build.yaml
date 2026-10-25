@@ -1,4 +1,3 @@
-
 name: CI Build
 
 on:
@@ -11,12 +10,11 @@ on:
 
 jobs:
   build:
-    name: Lint and Test
     runs-on: ubuntu-latest
 
     services:
       postgres:
-        image: postgres:15
+        image: postgres:alpine
         env:
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
@@ -36,7 +34,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: "3.9"
 
       - name: Install dependencies
         run: |
@@ -44,11 +42,9 @@ jobs:
           pip install -r requirements.txt
 
       - name: Lint with Flake8
-        run: |
-          flake8 service tests
+        run: flake8 service tests
 
       - name: Run unit tests
         env:
           DATABASE_URI: postgresql://postgres:postgres@127.0.0.1:5432/postgres
-        run: |
-          python -c "import collections, collections.abc, sys; collections.Callable = collections.abc.Callable; sys.argv = ['nosetests', '-v']; import nose; nose.main()"
+        run: nosetests
