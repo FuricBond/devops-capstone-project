@@ -1,0 +1,31 @@
+apiVersion: tekton.dev/v1
+kind: Task
+metadata:
+  name: accounts-clone
+spec:
+  workspaces:
+    - name: output
+  params:
+    - name: url
+      type: string
+      default: https://github.com/FuricBond/devops-capstone-project.git
+  steps:
+    - name: clone
+      image: alpine/git:latest
+      workingDir: $(workspaces.output.path)
+      script: |
+        #!/bin/sh
+        set -eu
+        git config --global --add safe.directory "$(workspaces.output.path)"
+
+        if [ -d .git ]; then
+          echo "Repository already exists; updating checkout."
+          git fetch --depth 1 origin main
+          git reset --hard FETCH_HEAD
+        else
+          echo "Cloning repository."
+          git clone --depth 1 "$(params.url)" .
+        fi
+
+        echo "Repository ready."
+        git log -1 --oneline
