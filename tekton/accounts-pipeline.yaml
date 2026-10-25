@@ -31,8 +31,23 @@ spec:
         - name: source
           workspace: shared-workspace
 
-    - name: deploy
+    - name: build
       runAfter:
         - test
       taskRef:
+        name: accounts-build
+
+    - name: deploy
+      runAfter:
+        - build
+      taskRef:
         name: accounts-deploy
+
+    - name: cleanup
+      runAfter:
+        - deploy
+      taskRef:
+        name: accounts-cleanup
+      workspaces:
+        - name: source
+          workspace: shared-workspace

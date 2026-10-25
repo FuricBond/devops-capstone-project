@@ -1,0 +1,36 @@
+===== DEPLOYMENTS =====
+NAME                    READY   UP-TO-DATE   AVAILABLE   AGE
+accounts                1/1     1            1           95m
+openshift-web-console   2/2     2            2           3h46m
+postgres                1/1     1            1           99m
+
+===== PODS =====
+NAME                                     READY   STATUS      RESTARTS   AGE
+accounts-1-build                         0/1     Completed   0          102m
+accounts-6645d8d759-d4sqx                1/1     Running     0          91m
+accounts-ci-cd-run-cz82x-clone-pod       0/1     Completed   0          48m
+accounts-ci-cd-run-cz82x-deploy-pod      0/1     Completed   0          46m
+accounts-ci-cd-run-cz82x-lint-pod        0/1     Completed   0          47m
+accounts-ci-cd-run-cz82x-test-pod        0/1     Completed   0          47m
+accounts-ci-cd-run-kgz69-clone-pod       0/1     Error       0          54m
+accounts-ci-cd-run-s2tzj-clone-pod       0/1     Error       0          53m
+accounts-ci-cd-run-xt2cv-clone-pod       0/1     Completed   0          52m
+accounts-ci-cd-run-xt2cv-lint-pod        0/1     Completed   0          52m
+accounts-ci-cd-run-xt2cv-test-pod        0/1     Completed   0          52m
+openshift-web-console-7b8d68965b-lkwfp   2/2     Running     0          3h46m
+openshift-web-console-7b8d68965b-ntnhc   2/2     Running     0          3h46m
+postgres-546b4d45f6-knk4n                1/1     Running     0          96m
+
+===== REPLICASETS =====
+NAME                               DESIRED   CURRENT   READY   AGE
+accounts-599cf87b56                0         0         0       95m
+accounts-6645d8d759                1         1         1       91m
+openshift-web-console-7b8d68965b   2         2         2       3h46m
+postgres-546b4d45f6                1         1         1       96m
+postgres-5756dd9f74                0         0         0       99m
+
+===== SERVICES =====
+NAME                    TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)    AGE
+accounts                ClusterIP   172.21.139.89    <none>        8080/TCP   95m
+openshift-web-console   ClusterIP   172.21.14.251    <none>        8000/TCP   3h46m
+postgres                ClusterIP   172.21.228.255   <none>        5432/TCP   99m
