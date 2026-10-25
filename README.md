@@ -1,3 +1,29 @@
+# DevOps Capstone Project — Customer Accounts Microservice
+
+## Project Details
+
+**Project:** DevOps Capstone Project  
+**Repository:** [FuricBond/devops-capstone-project](https://github.com/FuricBond/devops-capstone-project)  
+**Purpose:** Build and improve a RESTful Customer Accounts microservice for an e-commerce application as part of the IBM DevOps and Software Engineering Capstone.
+
+### Scope
+- Manage customer accounts through REST API operations.
+- Follow Agile planning with user stories, backlog prioritization, story-point estimation, and sprint planning.
+- Develop and test the Flask microservice using Test-Driven Development (TDD).
+- Add continuous integration and security controls.
+- Containerize the service and deploy it to Kubernetes/OpenShift, then automate deployment with Tekton.
+
+### Planning Artifacts
+- [User story template](user-story.md)
+- GitHub Issues: [Customer Accounts user stories](https://github.com/FuricBond/devops-capstone-project/issues)
+
+### Technology Stack
+Python 3.9, Flask, PostgreSQL, pytest/nose, Docker, Kubernetes/OpenShift, GitHub Actions, and Tekton.
+
+> This repository is based on the official IBM Skills Network starter template. The starter-code instructions and environment requirements below are retained for reference.
+
+---
+
 # DevOps Capstone Template
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
