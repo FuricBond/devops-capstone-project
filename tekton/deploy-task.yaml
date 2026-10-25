@@ -1,0 +1,20 @@
+apiVersion: tekton.dev/v1
+kind: Task
+metadata:
+  name: accounts-deploy
+spec:
+  steps:
+    - name: deploy
+      image: image-registry.openshift-image-registry.svc:5000/openshift/cli:latest
+      script: |
+        #!/bin/sh
+        set -eu
+
+        IMAGE="image-registry.openshift-image-registry.svc:5000/sn-labs-vidaldeo24/accounts:latest"
+
+        echo "Updating Accounts Deployment..."
+        oc set image deployment/accounts accounts="$IMAGE"
+        oc rollout status deployment/accounts --timeout=180s
+
+        echo "Deployment rollout completed successfully."
+        oc get deployment accounts
