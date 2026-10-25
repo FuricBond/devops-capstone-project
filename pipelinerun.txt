@@ -1,0 +1,261 @@
+[clone : clone] Repository already exists; updating checkout.
+[clone : clone] From https://github.com/FuricBond/devops-capstone-project
+[clone : clone]  * branch            main       -> FETCH_HEAD
+[clone : clone] HEAD is now at 5975b70 Add Accounts API Kubernetes service
+[clone : clone] Repository ready.
+[clone : clone] 5975b70 Add Accounts API Kubernetes service
+
+[lint : lint] Requirement already satisfied: pip in /usr/local/lib/python3.11/site-packages (24.0)
+[lint : lint] Collecting pip
+[lint : lint]   Downloading pip-26.2.2-py3-none-any.whl.metadata (4.6 kB)
+[lint : lint] Downloading pip-26.2.2-py3-none-any.whl (1.8 MB)
+[lint : lint]    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 6.2 MB/s eta 0:00:00
+[lint : lint] Installing collected packages: pip
+[lint : lint]   Attempting uninstall: pip
+[lint : lint]     Found existing installation: pip 24.0
+[lint : lint]     Uninstalling pip-24.0:
+[lint : lint]       Successfully uninstalled pip-24.0
+[lint : lint] Successfully installed pip-26.2.2
+[lint : lint] WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+[lint : lint] Collecting flake8
+[lint : lint]   Downloading flake8-7.4.1-py2.py3-none-any.whl.metadata (3.8 kB)
+[lint : lint] Collecting mccabe<0.8.0,>=0.7.0 (from flake8)
+[lint : lint]   Downloading mccabe-0.7.0-py2.py3-none-any.whl.metadata (5.0 kB)
+[lint : lint] Collecting pycodestyle<2.16.0,>=2.15.0 (from flake8)
+[lint : lint]   Downloading pycodestyle-2.15.0-py2.py3-none-any.whl.metadata (4.5 kB)
+[lint : lint] Collecting pyflakes<4.1.0,>=4.0.0 (from flake8)
+[lint : lint]   Downloading pyflakes-4.0.3-py2.py3-none-any.whl.metadata (3.7 kB)
+[lint : lint] Downloading flake8-7.4.1-py2.py3-none-any.whl (57 kB)
+[lint : lint] Downloading mccabe-0.7.0-py2.py3-none-any.whl (7.3 kB)
+[lint : lint] Downloading pycodestyle-2.15.0-py2.py3-none-any.whl (31 kB)
+[lint : lint] Downloading pyflakes-4.0.3-py2.py3-none-any.whl (66 kB)
+[lint : lint] Installing collected packages: pyflakes, pycodestyle, mccabe, flake8
+[lint : lint] 
+[lint : lint] Successfully installed flake8-7.4.1 mccabe-0.7.0 pycodestyle-2.15.0 pyflakes-4.0.3
+[lint : lint] WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+
+[test : test] Requirement already satisfied: pip in /usr/local/lib/python3.11/site-packages (24.0)
+[test : test] Collecting pip
+[test : test]   Downloading pip-26.2.2-py3-none-any.whl.metadata (4.6 kB)
+[test : test] Downloading pip-26.2.2-py3-none-any.whl (1.8 MB)
+[test : test]    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 5.8 MB/s eta 0:00:00
+[test : test] Installing collected packages: pip
+[test : test]   Attempting uninstall: pip
+[test : test]     Found existing installation: pip 24.0
+[test : test]     Uninstalling pip-24.0:
+[test : test]       Successfully uninstalled pip-24.0
+[test : test] Successfully installed pip-26.2.2
+[test : test] WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+[test : test] Collecting Werkzeug==2.1.2 (from -r requirements.txt (line 2))
+[test : test]   Downloading Werkzeug-2.1.2-py3-none-any.whl.metadata (4.4 kB)
+[test : test] Collecting SQLAlchemy==1.4.46 (from -r requirements.txt (line 3))
+[test : test]   Downloading SQLAlchemy-1.4.46-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (10 kB)
+[test : test] Collecting Flask==2.1.2 (from -r requirements.txt (line 6))
+[test : test]   Downloading Flask-2.1.2-py3-none-any.whl.metadata (3.9 kB)
+[test : test] Collecting Flask-SQLAlchemy==2.5.1 (from -r requirements.txt (line 7))
+[test : test]   Downloading Flask_SQLAlchemy-2.5.1-py2.py3-none-any.whl.metadata (3.1 kB)
+[test : test] Collecting psycopg2-binary==2.9.10 (from -r requirements.txt (line 8))
+[test : test]   Downloading psycopg2_binary-2.9.10-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.9 kB)
+[test : test] Collecting python-dotenv==0.20.0 (from -r requirements.txt (line 9))
+[test : test]   Downloading python_dotenv-0.20.0-py3-none-any.whl.metadata (19 kB)
+[test : test] Collecting gunicorn==20.1.0 (from -r requirements.txt (line 12))
+[test : test]   Downloading gunicorn-20.1.0-py3-none-any.whl.metadata (3.8 kB)
+[test : test] Collecting honcho==1.1.0 (from -r requirements.txt (line 13))
+[test : test]   Downloading honcho-1.1.0-py2.py3-none-any.whl.metadata (3.4 kB)
+[test : test] Collecting pylint==2.14.0 (from -r requirements.txt (line 16))
+[test : test]   Downloading pylint-2.14.0-py3-none-any.whl.metadata (9.6 kB)
+[test : test] Collecting flake8==4.0.1 (from -r requirements.txt (line 17))
+[test : test]   Downloading flake8-4.0.1-py2.py3-none-any.whl.metadata (4.0 kB)
+[test : test] Collecting black==22.3.0 (from -r requirements.txt (line 18))
+[test : test]   Downloading black-22.3.0-py3-none-any.whl.metadata (45 kB)
+[test : test] Collecting nose==1.3.7 (from -r requirements.txt (line 21))
+[test : test]   Downloading nose-1.3.7-py3-none-any.whl.metadata (1.7 kB)
+[test : test] Collecting pinocchio==0.4.3 (from -r requirements.txt (line 22))
+[test : test]   Downloading pinocchio-0.4.3-py3-none-any.whl.metadata (975 bytes)
+[test : test] Collecting factory-boy==2.12.0 (from -r requirements.txt (line 23))
+[test : test]   Downloading factory_boy-2.12.0-py2.py3-none-any.whl.metadata (12 kB)
+[test : test] Collecting coverage==6.3.2 (from -r requirements.txt (line 26))
+[test : test]   Downloading coverage-6.3.2.tar.gz (709 kB)
+[test : test]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 709.3/709.3 kB 57.9 MB/s  0:00:00
+[test : test]   Installing build dependencies: started
+[test : test]   Installing build dependencies: finished with status 'done'
+[test : test]   Getting requirements to build wheel: started
+[test : test]   Getting requirements to build wheel: finished with status 'done'
+[test : test]   Preparing metadata (pyproject.toml): started
+[test : test]   Preparing metadata (pyproject.toml): finished with status 'done'
+[test : test] Collecting httpie==3.2.1 (from -r requirements.txt (line 29))
+[test : test]   Downloading httpie-3.2.1-py3-none-any.whl.metadata (7.1 kB)
+[test : test] Collecting flask-cors==6.0.5 (from -r requirements.txt (line 30))
+[test : test]   Downloading flask_cors-6.0.5-py3-none-any.whl.metadata (5.4 kB)
+[test : test] Collecting flask-talisman==1.1.0 (from -r requirements.txt (line 31))
+[test : test]   Downloading flask_talisman-1.1.0-py2.py3-none-any.whl.metadata (18 kB)
+[test : test] Collecting greenlet!=0.4.17 (from SQLAlchemy==1.4.46->-r requirements.txt (line 3))
+[test : test]   Downloading greenlet-3.5.6-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (3.8 kB)
+[test : test] Collecting Jinja2>=3.0 (from Flask==2.1.2->-r requirements.txt (line 6))
+[test : test]   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+[test : test] Collecting itsdangerous>=2.0 (from Flask==2.1.2->-r requirements.txt (line 6))
+[test : test]   Downloading itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+[test : test] Collecting click>=8.0 (from Flask==2.1.2->-r requirements.txt (line 6))
+[test : test]   Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+[test : test] Requirement already satisfied: setuptools>=3.0 in /usr/local/lib/python3.11/site-packages (from gunicorn==20.1.0->-r requirements.txt (line 12)) (65.5.1)
+[test : test] Collecting dill>=0.2 (from pylint==2.14.0->-r requirements.txt (line 16))
+[test : test]   Downloading dill-0.4.1-py3-none-any.whl.metadata (10 kB)
+[test : test] Collecting platformdirs>=2.2.0 (from pylint==2.14.0->-r requirements.txt (line 16))
+[test : test]   Downloading platformdirs-4.13.5-py3-none-any.whl.metadata (5.5 kB)
+[test : test] Collecting astroid<=2.12.0-dev0,>=2.11.5 (from pylint==2.14.0->-r requirements.txt (line 16))
+[test : test]   Downloading astroid-2.11.7-py3-none-any.whl.metadata (4.7 kB)
+[test : test] Collecting isort<6,>=4.2.5 (from pylint==2.14.0->-r requirements.txt (line 16))
+[test : test]   Downloading isort-5.13.2-py3-none-any.whl.metadata (12 kB)
+[test : test] Collecting mccabe<0.8,>=0.6 (from pylint==2.14.0->-r requirements.txt (line 16))
+[test : test]   Downloading mccabe-0.7.0-py2.py3-none-any.whl.metadata (5.0 kB)
+[test : test] Collecting tomlkit>=0.10.1 (from pylint==2.14.0->-r requirements.txt (line 16))
+[test : test]   Downloading tomlkit-0.15.2-py3-none-any.whl.metadata (3.4 kB)
+[test : test] Collecting mccabe<0.8,>=0.6 (from pylint==2.14.0->-r requirements.txt (line 16))
+[test : test]   Downloading mccabe-0.6.1-py2.py3-none-any.whl.metadata (4.3 kB)
+[test : test] Collecting pycodestyle<2.9.0,>=2.8.0 (from flake8==4.0.1->-r requirements.txt (line 17))
+[test : test]   Downloading pycodestyle-2.8.0-py2.py3-none-any.whl.metadata (31 kB)
+[test : test] Collecting pyflakes<2.5.0,>=2.4.0 (from flake8==4.0.1->-r requirements.txt (line 17))
+[test : test]   Downloading pyflakes-2.4.0-py2.py3-none-any.whl.metadata (3.9 kB)
+[test : test] Collecting pathspec>=0.9.0 (from black==22.3.0->-r requirements.txt (line 18))
+[test : test]   Downloading pathspec-1.1.1-py3-none-any.whl.metadata (14 kB)
+[test : test] Collecting mypy-extensions>=0.4.3 (from black==22.3.0->-r requirements.txt (line 18))
+[test : test]   Downloading mypy_extensions-1.1.0-py3-none-any.whl.metadata (1.1 kB)
+[test : test] Collecting colorama (from pinocchio==0.4.3->-r requirements.txt (line 22))
+[test : test]   Downloading colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+[test : test] Collecting Faker>=0.7.0 (from factory-boy==2.12.0->-r requirements.txt (line 23))
+[test : test]   Downloading faker-40.43.0-py3-none-any.whl.metadata (16 kB)
+[test : test] Requirement already satisfied: pip in /usr/local/lib/python3.11/site-packages (from httpie==3.2.1->-r requirements.txt (line 29)) (26.2.2)
+[test : test] Collecting charset-normalizer>=2.0.0 (from httpie==3.2.1->-r requirements.txt (line 29))
+[test : test]   Downloading charset_normalizer-3.5.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+[test : test] Collecting defusedxml>=0.6.0 (from httpie==3.2.1->-r requirements.txt (line 29))
+[test : test]   Downloading defusedxml-0.7.1-py2.py3-none-any.whl.metadata (32 kB)
+[test : test] Collecting requests>=2.22.0 (from requests[socks]>=2.22.0->httpie==3.2.1->-r requirements.txt (line 29))
+[test : test]   Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+[test : test] Collecting Pygments>=2.5.2 (from httpie==3.2.1->-r requirements.txt (line 29))
+[test : test]   Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+[test : test] Collecting requests-toolbelt>=0.9.1 (from httpie==3.2.1->-r requirements.txt (line 29))
+[test : test]   Downloading requests_toolbelt-1.0.0-py2.py3-none-any.whl.metadata (14 kB)
+[test : test] Collecting multidict>=4.7.0 (from httpie==3.2.1->-r requirements.txt (line 29))
+[test : test]   Downloading multidict-7.2.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (6.1 kB)
+[test : test] Collecting rich>=9.10.0 (from httpie==3.2.1->-r requirements.txt (line 29))
+[test : test]   Downloading rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+[test : test] Collecting lazy-object-proxy>=1.4.0 (from astroid<=2.12.0-dev0,>=2.11.5->pylint==2.14.0->-r requirements.txt (line 16))
+[test : test]   Downloading lazy_object_proxy-1.13.0-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (5.1 kB)
+[test : test] Collecting wrapt<2,>=1.11 (from astroid<=2.12.0-dev0,>=2.11.5->pylint==2.14.0->-r requirements.txt (line 16))
+[test : test]   Downloading wrapt-1.17.3-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.4 kB)
+[test : test] Collecting MarkupSafe>=2.0 (from Jinja2>=3.0->Flask==2.1.2->-r requirements.txt (line 6))
+[test : test]   Downloading markupsafe-3.0.4-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+[test : test] Collecting idna<4,>=2.5 (from requests>=2.22.0->requests[socks]>=2.22.0->httpie==3.2.1->-r requirements.txt (line 29))
+[test : test]   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+[test : test] Collecting urllib3<3,>=1.26 (from requests>=2.22.0->requests[socks]>=2.22.0->httpie==3.2.1->-r requirements.txt (line 29))
+[test : test]   Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+[test : test] Collecting certifi>=2023.5.7 (from requests>=2.22.0->requests[socks]>=2.22.0->httpie==3.2.1->-r requirements.txt (line 29))
+[test : test]   Downloading certifi-2026.10.23-py3-none-any.whl.metadata (2.5 kB)
+[test : test] Collecting PySocks!=1.5.7,>=1.5.6 (from requests[socks]>=2.22.0->httpie==3.2.1->-r requirements.txt (line 29))
+[test : test]   Downloading PySocks-1.7.1-py3-none-any.whl.metadata (13 kB)
+[test : test] Collecting markdown-it-py>=2.2.0 (from rich>=9.10.0->httpie==3.2.1->-r requirements.txt (line 29))
+[test : test]   Downloading markdown_it_py-4.2.0-py3-none-any.whl.metadata (7.4 kB)
+[test : test] Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=9.10.0->httpie==3.2.1->-r requirements.txt (line 29))
+[test : test]   Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+[test : test] Downloading Werkzeug-2.1.2-py3-none-any.whl (224 kB)
+[test : test] Downloading SQLAlchemy-1.4.46-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.6 MB)
+[test : test]    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 107.1 MB/s  0:00:00
+[test : test] Downloading Flask-2.1.2-py3-none-any.whl (95 kB)
+[test : test] Downloading Flask_SQLAlchemy-2.5.1-py2.py3-none-any.whl (17 kB)
+[test : test] Downloading psycopg2_binary-2.9.10-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.0 MB)
+[test : test]    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.0/3.0 MB 64.3 MB/s  0:00:00
+[test : test] Downloading python_dotenv-0.20.0-py3-none-any.whl (17 kB)
+[test : test] Downloading gunicorn-20.1.0-py3-none-any.whl (79 kB)
+[test : test] Downloading honcho-1.1.0-py2.py3-none-any.whl (21 kB)
+[test : test] Downloading pylint-2.14.0-py3-none-any.whl (485 kB)
+[test : test] Downloading flake8-4.0.1-py2.py3-none-any.whl (64 kB)
+[test : test] Downloading black-22.3.0-py3-none-any.whl (153 kB)
+[test : test] Downloading nose-1.3.7-py3-none-any.whl (154 kB)
+[test : test] Downloading pinocchio-0.4.3-py3-none-any.whl (12 kB)
+[test : test] Downloading factory_boy-2.12.0-py2.py3-none-any.whl (36 kB)
+[test : test] Downloading httpie-3.2.1-py3-none-any.whl (124 kB)
+[test : test] Downloading flask_cors-6.0.5-py3-none-any.whl (16 kB)
+[test : test] Downloading flask_talisman-1.1.0-py2.py3-none-any.whl (18 kB)
+[test : test] Downloading astroid-2.11.7-py3-none-any.whl (251 kB)
+[test : test] Downloading isort-5.13.2-py3-none-any.whl (92 kB)
+[test : test] Downloading mccabe-0.6.1-py2.py3-none-any.whl (8.6 kB)
+[test : test] Downloading pycodestyle-2.8.0-py2.py3-none-any.whl (42 kB)
+[test : test] Downloading pyflakes-2.4.0-py2.py3-none-any.whl (69 kB)
+[test : test] Downloading wrapt-1.17.3-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (82 kB)
+[test : test] Downloading charset_normalizer-3.5.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (269 kB)
+[test : test] Downloading click-8.5.0-py3-none-any.whl (125 kB)
+[test : test] Downloading defusedxml-0.7.1-py2.py3-none-any.whl (25 kB)
+[test : test] Downloading dill-0.4.1-py3-none-any.whl (120 kB)
+[test : test] Downloading faker-40.43.0-py3-none-any.whl (2.1 MB)
+[test : test]    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 34.3 MB/s  0:00:00
+[test : test] Downloading greenlet-3.5.6-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (624 kB)
+[test : test]    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 624.4/624.4 kB 79.5 MB/s  0:00:00
+[test : test] Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+[test : test] Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+[test : test] Downloading lazy_object_proxy-1.13.0-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (68 kB)
+[test : test] Downloading markupsafe-3.0.4-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+[test : test] Downloading multidict-7.2.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (510 kB)
+[test : test] Downloading mypy_extensions-1.1.0-py3-none-any.whl (5.0 kB)
+[test : test] Downloading pathspec-1.1.1-py3-none-any.whl (57 kB)
+[test : test] Downloading platformdirs-4.13.5-py3-none-any.whl (32 kB)
+[test : test] Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+[test : test]    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 140.1 MB/s  0:00:00
+[test : test] Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+[test : test] Downloading idna-3.20-py3-none-any.whl (69 kB)
+[test : test] Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+[test : test] Downloading certifi-2026.10.23-py3-none-any.whl (135 kB)
+[test : test] Downloading requests_toolbelt-1.0.0-py2.py3-none-any.whl (54 kB)
+[test : test] Downloading PySocks-1.7.1-py3-none-any.whl (16 kB)
+[test : test] Downloading rich-15.0.0-py3-none-any.whl (310 kB)
+[test : test] Downloading markdown_it_py-4.2.0-py3-none-any.whl (91 kB)
+[test : test] Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+[test : test] Downloading tomlkit-0.15.2-py3-none-any.whl (52 kB)
+[test : test] Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+[test : test] Building wheels for collected packages: coverage
+[test : test]   Building wheel for coverage (pyproject.toml): started
+[test : test]   Building wheel for coverage (pyproject.toml): finished with status 'done'
+[test : test]   Created wheel for coverage: filename=coverage-6.3.2-py3-none-any.whl size=175693 sha256=064dbd901fc0bfafffa3c6a63c2bb3b3bee36db053f3b6eb08ece5845296f707
+[test : test]   Stored in directory: /root/.cache/pip/wheels/15/02/de/83d458bc0a1e520dea5ccb138bb72fa872672da9f55afd1386
+[test : test] Successfully built coverage
+[test : test] Installing collected packages: nose, mccabe, honcho, flask-talisman, wrapt, Werkzeug, urllib3, tomlkit, python-dotenv, PySocks, Pygments, pyflakes, pycodestyle, psycopg2-binary, platformdirs, pathspec, mypy-extensions, multidict, mdurl, MarkupSafe, lazy-object-proxy, itsdangerous, isort, idna, gunicorn, greenlet, Faker, dill, defusedxml, coverage, colorama, click, charset-normalizer, certifi, SQLAlchemy, requests, pinocchio, markdown-it-py, Jinja2, flake8, factory-boy, black, astroid, rich, requests-toolbelt, pylint, Flask, httpie, Flask-SQLAlchemy, flask-cors
+[test : test] 
+[test : test] Successfully installed Faker-40.43.0 Flask-2.1.2 Flask-SQLAlchemy-2.5.1 Jinja2-3.1.6 MarkupSafe-3.0.4 PySocks-1.7.1 Pygments-2.21.0 SQLAlchemy-1.4.46 Werkzeug-2.1.2 astroid-2.11.7 black-22.3.0 certifi-2026.10.23 charset-normalizer-3.5.2 click-8.5.0 colorama-0.4.6 coverage-6.3.2 defusedxml-0.7.1 dill-0.4.1 factory-boy-2.12.0 flake8-4.0.1 flask-cors-6.0.5 flask-talisman-1.1.0 greenlet-3.5.6 gunicorn-20.1.0 honcho-1.1.0 httpie-3.2.1 idna-3.20 isort-5.13.2 itsdangerous-2.2.0 lazy-object-proxy-1.13.0 markdown-it-py-4.2.0 mccabe-0.6.1 mdurl-0.1.2 multidict-7.2.1 mypy-extensions-1.1.0 nose-1.3.7 pathspec-1.1.1 pinocchio-0.4.3 platformdirs-4.13.5 psycopg2-binary-2.9.10 pycodestyle-2.8.0 pyflakes-2.4.0 pylint-2.14.0 python-dotenv-0.20.0 requests-2.34.2 requests-toolbelt-1.0.0 rich-15.0.0 tomlkit-0.15.2 urllib3-2.8.0 wrapt-1.17.3
+[test : test] WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+[test : test] It should call the db-create command ... ok
+[test : test] It should Create an account and add it to the database ... ok
+[test : test] It should Create an Account and assert that it exists ... ok
+[test : test] It should Delete an account from the database ... ok
+[test : test] It should Deserialize an account ... ok
+[test : test] It should not Deserialize an account with a KeyError ... ok
+[test : test] It should not Deserialize an account with a TypeError ... ok
+[test : test] It should Find an Account by name ... ok
+[test : test] It should List all Accounts in the database ... ok
+[test : test] It should Read an account ... ok
+[test : test] It should Serialize an account ... ok
+[test : test] It should Update an account ... ok
+[test : test] It should not Create an Account when sending the wrong data ... ok
+[test : test] It should Create a new Account ... ok
+[test : test] It should delete an existing Account. ... ok
+[test : test] It should return 404 when deleting a missing Account. ... ok
+[test : test] It should be healthy ... ok
+[test : test] It should get 200_OK from the Home Page ... ok
+[test : test] It should list all Accounts. ... ok
+[test : test] It should return an empty list when there are no Accounts. ... ok
+[test : test] It should read an Account by ID. ... ok
+[test : test] It should return 404 for a missing Account. ... ok
+[test : test] It should not Create an Account when sending the wrong media type ... ok
+[test : test] It should update an existing Account. ... ok
+[test : test] It should reject an invalid Account update. ... ok
+[test : test] It should return 404 when updating a missing Account. ... ok
+[test : test] 
+[test : test] ----------------------------------------------------------------------
+[test : test] Ran 26 tests in 4.719s
+[test : test] 
+[test : test] OK
+
+[deploy : deploy] Updating Accounts Deployment...
+[deploy : deploy] deployment "accounts" successfully rolled out
+[deploy : deploy] Deployment rollout completed successfully.
+[deploy : deploy] NAME       READY   UP-TO-DATE   AVAILABLE   AGE
+[deploy : deploy] accounts   1/1     1            1           49m
+
