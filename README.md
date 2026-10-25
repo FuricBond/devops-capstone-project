@@ -1,5 +1,7 @@
 # DevOps Capstone Project — Customer Accounts Microservice
 
+[![CI Build](https://github.com/FuricBond/devops-capstone-project/actions/workflows/ci-build.yaml/badge.svg?branch=main)](https://github.com/FuricBond/devops-capstone-project/actions/workflows/ci-build.yaml)
+
 ## Project Details
 
 **Project:** DevOps Capstone Project  
