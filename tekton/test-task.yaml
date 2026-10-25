@@ -1,0 +1,20 @@
+apiVersion: tekton.dev/v1
+kind: Task
+metadata:
+  name: accounts-test
+spec:
+  workspaces:
+    - name: source
+  steps:
+    - name: test
+      image: python:3.11-slim
+      workingDir: $(workspaces.source.path)
+      env:
+        - name: DATABASE_URI
+          value: postgresql://postgres:postgres@postgres:5432/postgres
+      script: |
+        #!/bin/sh
+        set -eu
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        python -c "import collections, collections.abc, sys; collections.Callable = collections.abc.Callable; sys.argv = ['nosetests', '-v']; import nose; nose.main()"
